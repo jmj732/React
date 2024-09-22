@@ -1,0 +1,39 @@
+{
+  "days": [
+    {
+      "id": "1",
+      "day": 1
+    },
+    {
+      "id": "2",
+      "day": 2
+    },
+    {
+      "id": "3",
+      "day": 3
+    }
+  ],
+  "words": [
+    {
+      "id": "4",
+      "day": 2,
+      "eng": "pen",
+      "kor": "펜",
+      "isDone": true
+    },
+    {
+      "id": "5",
+      "day": 3,
+      "eng": "school",
+      "kor": "학교",
+      "isDone": false
+    },
+    {
+      "id": "6",
+      "day": 3,
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    }
+  ]
+}
