@@ -11,6 +11,10 @@
     {
       "id": "3",
       "day": 3
+    },
+    {
+      "id": "756a",
+      "day": 4
     }
   ],
   "words": [
@@ -19,7 +23,7 @@
       "day": 2,
       "eng": "pen",
       "kor": "펜",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": "5",
