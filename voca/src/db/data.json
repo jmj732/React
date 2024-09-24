@@ -7,24 +7,9 @@
     {
       "id": "2",
       "day": 2
-    },
-    {
-      "id": "3",
-      "day": 3
-    },
-    {
-      "id": "756a",
-      "day": 4
     }
   ],
   "words": [
-    {
-      "id": "4",
-      "day": 2,
-      "eng": "pen",
-      "kor": "펜",
-      "isDone": false
-    },
     {
       "id": "5",
       "day": 3,
@@ -37,6 +22,20 @@
       "day": 3,
       "eng": "pencil",
       "kor": "연필",
+      "isDone": false
+    },
+    {
+      "id": "f010",
+      "day": "1",
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    },
+    {
+      "id": "6d0e",
+      "day": "1",
+      "eng": "apple",
+      "kor": "사과",
       "isDone": false
     }
   ]

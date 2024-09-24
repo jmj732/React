@@ -32,7 +32,7 @@ export default function Word({word : w}) {
             }
         })
     }
-
+    
     function del(){
         if(window.confirm('삭제 하시겠습니까?')){
             fetch(`http://localhost:3001/words/${word.id}`,{
