@@ -1,16 +1,14 @@
-import useFetch from "../hooks/useFetch"
-import { useNavigate } from 'react-router-dom';
-import { useRef, useState } from "react";
+import { useNavigate, useParams } from 'react-router-dom';
+import { useRef, useState} from "react";
 
 export default function CreateWord() {
-    const days = useFetch("http://localhost:3001/days");
+    const { day } = useParams();
     const navigate = new useNavigate();
     const [isLoading,setLoading] = useState(false);
 
     function onSubmit(e){
         e.preventDefault();
-        console.log(days.length);
-        if(!isLoading) {
+        if(!isLoading & engRef != null && korRef != null ) {
             setLoading(true);
             fetch(`http://localhost:3001/words/`, {
             method : "POST",
@@ -18,7 +16,7 @@ export default function CreateWord() {
                 'Content-Type' : 'application/json',
             },
             body : JSON.stringify({
-                day: dayRef.current.value,
+                day: day,
                 eng: engRef.current.value,
                 kor: korRef.current.value ,
                 isDone : false
@@ -27,7 +25,7 @@ export default function CreateWord() {
         .then(res => {
             if(res.ok){
                 alert("생성이 완료되었습니다.");
-                navigate(`/day/${dayRef.current.value}`);
+                navigate(`/day/${day}`);
                 setLoading(false);
             }
         })
@@ -37,10 +35,9 @@ export default function CreateWord() {
 
     const engRef = useRef(null);
     const korRef = useRef(null);
-    const dayRef = useRef(null);
 
   return (
-    <form onSubmit={onSubmit} >
+    <form onSubmit={onSubmit}>
         <div className='input_area'>
             <label>Eng</label>
             <input type='text' placeholder='computer' ref={engRef}/> 
@@ -49,17 +46,11 @@ export default function CreateWord() {
             <label>Kor</label>
             <input type='text' placeholder='컴퓨터' ref={korRef}/> 
         </div>
-        <div className='input_area'>
-            <label>Day</label>
-            <select ref={dayRef}>
-                {days.map(day => (
-                     <option key={day.id} value={day.day}>
-                        {day.day}
-                    </option>
-                ))}
-            </select>
+        <div>
+            <button type='button' onClick={() => navigate(-1)}>뒤로가기</button>
+            <button  style={{opacity : isLoading ? 0.3:1 , margin : 10 }} >{isLoading ? "저장중":"저장"}</button>
         </div>
-        <button style={{opacity : isLoading ? 0.3:1}} >{isLoading ? "저장중":"저장"}</button>
+        
     </form>
   )
 }

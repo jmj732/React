@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<DayList />} />
           <Route path="/day/:day" element = {<Day />} />
-          <Route path="/create_word" element = {<CreateWord/>}/>
+          <Route path="/day/:day/create_word" element = {<CreateWord/>}/>
           <Route path="/create_day" element = {<CreateDay/>}/>
           <Route element={<EmptyPage />}></Route>
 

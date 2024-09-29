@@ -67,6 +67,9 @@ a {
   top: 10px;
   right: 0;
 }
+.deldaybtn{
+  margin-left: 10px;
+}
 
 .header .link {
   border: 1px solid #333;
@@ -113,7 +116,19 @@ table td {
 table td:first-child {
   width: 10%;
 }
-
+.trb {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+.trb > a >button{
+  width: 120px;
+  height: 63px;
+}
+.trb >button{
+  width: 120px;
+  height: 63px;
+}
 .off td {
   background: #eee;
   color: #ccc;
@@ -140,12 +155,10 @@ button {
 .input_area {
   margin-bottom: 10px;
 }
-
 .input_area label {
   display: block;
   margin-bottom: 10px;
 }
-
 .input_area input {
   width: 400px;
   height: 40px;
@@ -153,8 +166,5 @@ button {
   padding: 0 10px;
 }
 
-.input_area select {
-  width: 400px;
-  height: 40px;
-  font-size: 20px;
-}
+
+

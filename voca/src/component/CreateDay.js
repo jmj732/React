@@ -28,7 +28,8 @@ export default function CreateDay() {
   return (
     <div>
         <h3>현재 일수 : {days.length}</h3>
-        <button onClick={addDay}>Day 추가</button>
+        <button type='button' onClick={() => navigate(-1)}>뒤로가기</button>
+        <button style={{margin:10}} onClick={addDay}>Day 추가</button>
     </div>
   )
 }

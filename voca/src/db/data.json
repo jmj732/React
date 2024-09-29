@@ -5,38 +5,31 @@
       "day": 1
     },
     {
-      "id": "2",
+      "id": "99ba",
       "day": 2
     }
   ],
   "words": [
     {
-      "id": "5",
-      "day": 3,
-      "eng": "school",
-      "kor": "학교",
-      "isDone": false
-    },
-    {
-      "id": "6",
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
-      "isDone": false
-    },
-    {
       "id": "f010",
       "day": "1",
       "eng": "pencil",
       "kor": "연필",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": "6d0e",
       "day": "1",
       "eng": "apple",
       "kor": "사과",
-      "isDone": false
+      "isDone": true
+    },
+    {
+      "id": "a1bf",
+      "day": "1",
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "isDone": true
     }
   ]
 }
